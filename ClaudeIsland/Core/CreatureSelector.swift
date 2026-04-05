@@ -21,6 +21,12 @@ class CreatureSelector: ObservableObject {
         self.selectedCreature = AppSettings.notchCreature
     }
 
+    /// Extra height needed when picker is expanded
+    var expandedPickerHeight: CGFloat {
+        guard isPickerExpanded else { return 0 }
+        return CGFloat(NotchCreature.allCases.count) * 32
+    }
+
     // MARK: - Public API
 
     func select(_ creature: NotchCreature) {
