@@ -1,8 +1,8 @@
 <div align="center">
   <img src="ClaudeIsland/Assets.xcassets/AppIcon.appiconset/icon_128x128.png" alt="Logo" width="100" height="100">
-  <h3 align="center">Claude Island</h3>
+  <h3 align="center">Creature Island</h3>
   <p align="center">
-    A macOS menu bar app that brings Dynamic Island-style notifications to Claude Code CLI sessions.
+    A macOS menu bar app that brings Dynamic Island-style notifications to Claude Code CLI sessions. Pick your creature!
     <br />
     <br />
     <a href="https://github.com/farouqaldori/claude-island/releases/latest" target="_blank" rel="noopener noreferrer">
