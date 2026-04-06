@@ -20,6 +20,7 @@ struct NotchView: View {
     @StateObject private var sessionMonitor = ClaudeSessionMonitor()
     @StateObject private var activityCoordinator = NotchActivityCoordinator.shared
     @ObservedObject private var updateManager = UpdateManager.shared
+    @ObservedObject private var creatureSelector = CreatureSelector.shared
     @State private var previousPendingIds: Set<String> = []
     @State private var previousWaitingForInputIds: Set<String> = []
     @State private var waitingForInputTimestamps: [String: Date] = [:]  // sessionId -> when it entered waitingForInput
@@ -249,7 +250,7 @@ struct NotchView: View {
             // Left side - crab + optional permission indicator (visible when processing, pending, or waiting for input)
             if showClosedActivity {
                 HStack(spacing: 4) {
-                    ClaudeCrabIcon(size: 14, animateLegs: isProcessing)
+                    NotchCreatureIcon(creature: creatureSelector.selectedCreature, size: 14, animate: isProcessing)
                         .matchedGeometryEffect(id: "crab", in: activityNamespace, isSource: showClosedActivity)
 
                     // Permission indicator only (amber) - waiting for input shows checkmark on right
@@ -307,7 +308,7 @@ struct NotchView: View {
             // Show static crab only if not showing activity in headerRow
             // (headerRow handles crab + indicator when showClosedActivity is true)
             if !showClosedActivity {
-                ClaudeCrabIcon(size: 14)
+                NotchCreatureIcon(creature: creatureSelector.selectedCreature, size: 14)
                     .matchedGeometryEffect(id: "crab", in: activityNamespace, isSource: !showClosedActivity)
                     .padding(.leading, 8)
             }
