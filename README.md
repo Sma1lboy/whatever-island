@@ -5,11 +5,11 @@
     A macOS menu bar app that brings Dynamic Island-style notifications to Claude Code CLI sessions. Pick your creature!
     <br />
     <br />
-    <a href="https://github.com/Sma1lboy/claude-island/releases/latest" target="_blank" rel="noopener noreferrer">
-      <img src="https://img.shields.io/github/v/release/Sma1lboy/claude-island?style=rounded&color=white&labelColor=000000&label=release" alt="Release Version" />
+    <a href="https://github.com/Sma1lboy/whatever-island/releases/latest" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.shields.io/github/v/release/Sma1lboy/whatever-island?style=rounded&color=white&labelColor=000000&label=release" alt="Release Version" />
     </a>
     <a href="#" target="_blank" rel="noopener noreferrer">
-      <img alt="GitHub Downloads" src="https://img.shields.io/github/downloads/Sma1lboy/claude-island/total?style=rounded&color=white&labelColor=000000">
+      <img alt="GitHub Downloads" src="https://img.shields.io/github/downloads/Sma1lboy/whatever-island/total?style=rounded&color=white&labelColor=000000">
     </a>
   </p>
 </div>
